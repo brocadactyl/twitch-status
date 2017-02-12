@@ -2,7 +2,7 @@ var streamerNameID = "";
 var client_Id = "l6fsll8ne7ih98e9tvnu449z44tffo9";
 var authHash = document.location.hash;
 var authToken = authHash.slice(14,44);
-     var user_id = "";
+var user_id = "";
 var logged_in = false;
 
 function getAPIStatus() {
