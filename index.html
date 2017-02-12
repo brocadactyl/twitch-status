@@ -1,0 +1,147 @@
+<html>
+<head>
+<link href='/favicon.ico' id="favicon" rel='shortcut icon' type='image/x-icon'>
+<link rel="stylesheet" type="text/css" href="twitchstatus.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js">
+</script>
+<title>Twitch Status</title>
+</head>
+<body>
+<div id="outterpage">
+
+  <!-- Left Column -->
+  <div id="leftcolumn"><div id="leftcolumninner">
+    <div id="leftupperblock">
+    <div id="bannerblock"><a href="http://twitch.thesadmoon.com/status">TWITCH STATUS </a></div>
+  <div id="streamsearchblock"><div id="searchstream">
+  Search Channel: <input type="text" name="StreamerName" id="streamnamesearchtext"></div>
+    <div id="streamsearchbutton" class="noselect">Go</div>
+  </div></div>
+
+<div class="followblock"><div id="followchannelblock" class="followchannelblock">
+</div></div>
+
+<div id="twitchconnectionsblock">
+  <div id="displaynameblock" class="displaynone"><div id="displaynameimgblock"><img id="displaynameimg" src=""></div><div id="displayname">
+  </div><div id="twitchlogoutblock"  class="displaynone"><a href="/status" class="twitch-logout">Log Out</a></div></div>
+<div id="twitchconnectblock">
+<img src="http://ttv-api.s3.amazonaws.com/assets/connect_dark.png" class="twitch-connect" href="#" /></div>
+</div>
+</div>
+</div>
+
+<!-- Center Column -->
+  <div id="centercolumn">
+  <div id="outtercontentblock" class="displaynone">
+  <div id="innerframe">
+    <div id="ledcolumn1" class="ledcolumn">
+      <div id="led10" class="led"></div>
+      <div id="led9" class="led"></div>
+      <div id="led8" class="led"></div>
+      <div id="led7" class="led"></div>
+      <div id="led6" class="led"></div>
+    </div>
+    <div id="ledcolumn2" class="ledcolumn">
+      <div id="led6" class="led"></div>
+      <div id="led7" class="led"></div>
+      <div id="led8" class="led"></div>
+      <div id="led9" class="led"></div>
+      <div id="led10" class="led"></div>
+      <div id="2led6" class="led"></div>
+      <div id="2led7" class="led"></div>
+      <div id="2led8" class="led"></div>
+      <div id="2led9" class="led"></div>
+      <div id="2led10" class="led"></div>
+    </div>
+
+<a id="streamlink" target="_blank">
+    <div id="innercontentblock">
+      <div id="contentblock">
+        <div id="liveblock">
+          <div id="liveblockcontent">
+            <div id="livelight" class="livelightoff"></div>
+            <div id="info"></div>-
+            <div id="streamername"></div>
+          </div>
+        </div>
+        <div id="streamtitle"></div>
+        <div>
+          <img id="preview">
+        </div>
+        <div id="playing">
+          Playing <span id="gametitle"></span> for <span id="viewers"></span> viewers.
+        </div>
+      </div>
+      <div id="contentblockbg"></div>
+    </div>
+</a>
+    <div id="ledcolumn3" class="ledcolumn">
+      <div class="led"></div>
+      <div class="led"></div>
+      <div class="led"></div>
+      <div class="led"></div>
+      <div class="led"></div>
+      <div class="led"></div>
+      <div class="led"></div>
+      <div class="led "></div>
+      <div class="led"></div>
+      <div class="led"></div>
+    </div>
+    <div id="ledcolumn4" class="ledcolumn">
+      <div class="led"></div>
+      <div class="led"></div>
+      <div class="led"></div>
+      <div class="led"></div>
+      <div class="led"></div>
+    </div></div>
+    <!-- Below the inner "screen" -->
+    <div id="innerframe2">
+      <div id="innerframe2block">
+        <table><tr><td>
+        <div id="chatbuttonblock"><div class="ctrltext">Twitch Chat
+<!-- Original checkbox style
+          <input type="checkbox" id="chatcheck">
+        -->
+        </div>
+
+      </div></td><td>
+      <div id="chatbuttonblock"><div class="ctrltext">Sound Alert
+      </div>
+
+    </div></td></tr>
+    <tr><td>
+    <button id="chatcheckbutton">Connect</button>
+  </td><td>
+      <button id="soundcheckbutton">Off</button>
+    </td></tr>
+  </table>
+    </div>
+    </div>
+  </div>
+</div>
+
+  <div id="hidechatsquare" class="displaynone">&#9658;</div>
+<!-- Right Column -->
+<div id="rightcolumn">
+  <div id="chatblock">
+    <iframe frameborder="0"
+            scrolling="no"
+            id="chat_embed"
+            src=""
+            height="100%"
+            width="320">
+    </iframe>
+  </div>
+</div>
+</div>
+
+<p id="datablock"></p>
+
+
+<script src="//code.jquery.com/jquery.min.js"></script>
+<!-- Depreciated -->
+<!-- <script src="https://ttv-api.s3.amazonaws.com/twitch.min.js"></script> -->
+<script src="twitchstatus.js"></script>
+
+</body>
+</html>
